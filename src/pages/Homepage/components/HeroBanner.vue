@@ -127,7 +127,6 @@ const appLinks = computed(() => {
   gap: toRem(16);
   background: url('/src/assets/test4.png') no-repeat top center;
   background-size: cover;
-  margin-top: -150px;
   padding-top: toRem(300);
   padding-bottom: toRem(160);
 
