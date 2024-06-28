@@ -1,41 +1,4 @@
-<template>
-  <div class="tech-doc" dir="rtl">
-    <div class="tech-doc__back-link-wrp">
-      <app-button
-        class="tech-doc__back-link"
-        :icon-left="$icons.arrowLeft"
-        scheme="none"
-        color="none"
-        size="none"
-        @click="back"
-      >
-        {{ $t('tech-doc.back-link') }}
-      </app-button>
-    </div>
-
-    <app-markdown class="tech-doc__content" :source="source" />
-  </div>
-</template>
-
-<script setup lang="ts">
-import { AppButton } from '@/common'
-import AppMarkdown from '@/common/AppMarkdown.vue'
-
-import { html as htmlFa } from '@/localization/resources/AnonDoc-fa.md'
-import { computed } from 'vue'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
-
-const source = computed(() => htmlFa)
-
-const back = () => {
-  router.go(-1)
-}
-</script>
-
-<style lang="scss">
-@import '../../styles/persian_font.scss';
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
 #app .tech-doc {
   padding-bottom: toRem(120);
@@ -318,4 +281,3 @@ html body .tech-doc .tech-doc__content {
   }
 }
 /* stylelint-enable */
-</style>
