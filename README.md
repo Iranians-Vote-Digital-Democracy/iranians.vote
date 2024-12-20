@@ -1,12 +1,19 @@
 # Table of Contents
-# Table of Contents
 - [Table of Contents](#table-of-contents)
-- [Table of Contents](#table-of-contents-1)
   - [Introduction](#introduction)
-  - [Dialogue Section](#dialogue-section)
-  - [Voting Section](#voting-section)
   - [Roadmap](#roadmap)
   - [Mobile Apps](#mobile-apps)
+  - [Dialogue Section](#dialogue-section)
+  - [Voting Section](#voting-section)
+  - [Roadmap](#roadmap-1)
+    - [Anonymous Voting System](#anonymous-voting-system)
+    - [Identity Verification using passport](#identity-verification-using-passport)
+  - [Anonymous Registration](#anonymous-registration)
+    - [Secure Profile Creation](#secure-profile-creation)
+    - [Smart Contract Integration](#smart-contract-integration)
+  - [Privacy Protection](#privacy-protection)
+    - [Data Security](#data-security)
+    - [Anonymous Voting](#anonymous-voting)
   - [Website setup](#website-setup)
     - [Install dependencies](#install-dependencies)
     - [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
@@ -18,12 +25,6 @@
 ## Introduction
 The initial model of Iranians.vote consists of two parts: “Dialogue” and “Trustworthy Voting.” Trustworthiness includes guaranteeing vote non-repeatability, voter uniqueness, complete protection of voter identity and privacy, and transparency in result calculation.
 
-## Dialogue Section
-[Nextodon](https://github.com/tcfev/Nextodon) is a social network compatible with Fediverse and Mastodon with additional features that facilitate structured group dialogue. Nextodon provides written discussion capabilities, basic polling features, and a basic infrastructure for crypto economy.
-
-## Voting Section
-Digital discussions (from Nextodon or other platforms) can be brought to [Iranians.vote](https://iranians.vote) to find social choices and reach reliable conclusions through polling.
-
 ## Roadmap
 * Add newsletter, and collaboration infrastructure for the entire platform  
 * Playground for familiarization with processes and testing games  
@@ -32,6 +33,51 @@ Digital discussions (from Nextodon or other platforms) can be brought to [Irania
 ## Mobile Apps
 * [Iranians Vote Android App](https://github.com/tcfev/iranians-vote-android)
 * [Iranians Vote iOS App](https://github.com/tcfev/iranians-vote-ios)
+  
+## Dialogue Section
+[Nextodon](https://github.com/tcfev/Nextodon) is a social network compatible with Fediverse and Mastodon with additional features that facilitate structured group dialogue. Nextodon provides written discussion capabilities, basic polling features, and a basic infrastructure for crypto economy.
+
+## Voting Section
+Digital discussions (from Nextodon or other platforms) can be brought to [Iranians.vote](https://iranians.vote) to find social choices and reach reliable conclusions through polling.
+
+## Roadmap
+- Iranian National ID card
+- German National ID card (Ausweis)
+
+### Anonymous Voting System
+Our voting system incorporates a robust privacy-preserving architecture that leverages biometric documents and zero-knowledge proofs (ZKP) to enable secure, anonymous voting while maintaining voter authenticity.
+Currently we support biometric passports. [(ICAO's Doc 9303)](https://www.icao.int/publications/documents/9303_p9_cons_en.pdf)
+
+### Identity Verification using passport
+- Uses biometric passport data as the foundation for voter authentication
+- Validates passport authenticity through digital signatures without exposing personal data
+- Employs zero-knowledge proofs to verify voter eligibility while preserving privacy
+
+## Anonymous Registration
+
+### Secure Profile Creation
+- Generates digital voter profiles using passport biometric data as identifiers
+- Creates anonymous digital credentials that can’t be linked to individual voters
+- Validates passport authenticity using ZKP technology without revealing personal information
+
+### Smart Contract Integration
+- Implements blockchain-based smart contracts for transparent vote recording
+- Uses three-contract architecture:
+  - Investment contract (INV) for transaction fee management
+  - Registration contract (REG) for anonymous voter registration
+  - Voting contract (VOT) for anonymous ballot casting and tallying
+
+## Privacy Protection
+
+### Data Security
+- All verification happens locally without transmitting personal data
+- No personal information is stored or accessible by external parties
+- Uses cryptographic techniques to ensure vote secrecy while maintaining verifiability
+
+### Anonymous Voting
+- Employs a nullifier-based system to prevent double voting while maintaining anonymity
+- Separates registration transactions from voting transactions to prevent correlation
+- Allows voters to cast ballots from any device using secure credentials without exposing identity
 
 ---
 ## Website setup
