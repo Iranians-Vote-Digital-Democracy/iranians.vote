@@ -1,7 +1,5 @@
 # Table of Contents
-# Table of Contents
 - [Table of Contents](#table-of-contents)
-- [Table of Contents](#table-of-contents-1)
   - [Introduction](#introduction)
   - [Dialogue Section](#dialogue-section)
   - [Voting Section](#voting-section)
