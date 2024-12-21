@@ -7,7 +7,7 @@ National Organization for Civil Registration is the main body in charge of the N
 We are currently investigating one of the Matiran's protected SDKs used by a 3rd party application [(Dastine)](pki.co.ir), and will gradually share our findings with you as we proceed. If you are interested in reverse-engineering next to us, an expert in smart cards, ex-employee of any of the named organisations having worked on the tech, please get in touch.
 
 ## Unpackingn Process
-Matiran, the devoloper of the NID, has published a software development kit which can be found in its original form [here](/src/assets/matiran-sdk/MDAS-Client_x64.dll).  
+Matiran, the devoloper of the NID, has published a software development kit which can be found in its original form [here](/assets/matiran-sdk/MDAS-Client_x64.dll).  
 We decided to unpack the SDK and and reverse-engineer it to find the methods and APDU commands used to communicate with the card.
 
 We had two option 2 do handle the protected library. a) decrypt the code statically, b) run the binary and dump it. To overcome the challenge of being caught after attaching a debugger to the EXE process we use a `scyllahide`.
@@ -24,12 +24,12 @@ We used another custom tool specifically made for writing the imports, making ch
 
 Eventually we I had to verify every single imported function to make sure we had not made a mistake, and when verified, we were able to load the DLL into the memory successfully!
 
-Unpacked [DLL](/src/assets/matiran-sdk/dump_oep-modified_sec_fixedIAT.dll).
+Unpacked [DLL](/assets/matiran-sdk/dump_oep-modified_sec_fixedIAT.dll).
 
 ---
 ### **National Developer of the Card OS (Matiran)**
 
-* Technical docs from MatIran(Gov. Contractor for the ID Card) / روال ارزيابي و مشخصات فني مورد نياز كارت خوان  
+* Technical docs from MatIran/ روال ارزيابي و مشخصات فني مورد نياز كارت خوان  
   * [اسكنر اثر انگشت و وبكم در سامانه بهره برداري از كارت هوشمند ملي](https://matiran.ir/wp-content/uploads/2024/02/021205-IRANID_Devices_Evaluation_100_15.1.pdf)	
 
 
