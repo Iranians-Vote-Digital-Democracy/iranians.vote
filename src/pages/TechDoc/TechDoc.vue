@@ -35,7 +35,7 @@ const back = () => {
 </script>
 
 <style lang="scss">
-@import '../../styles/persian_font.scss';
+@import '../../styles/persian_font';
 
 #app .tech-doc {
   padding-bottom: toRem(120);

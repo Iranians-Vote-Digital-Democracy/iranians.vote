@@ -3,7 +3,7 @@ import resources from '@/localization/resources'
 import { createI18n } from 'vue-i18n'
 
 // const STORAGE_KEY = 'locale'
-const DEFAULT_LOCALE = 'rus'
+const DEFAULT_LOCALE = 'fa'
 
 const locale =
   // localStorage?.getItem(STORAGE_KEY) ??

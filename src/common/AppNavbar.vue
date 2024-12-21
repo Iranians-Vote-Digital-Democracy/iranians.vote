@@ -4,7 +4,7 @@
 
     <!--<span class="app-navbar__locale-switcher">-->
     <!--  <span class="app-navbar__locale-switcher-text">-->
-    <!--    {{ `rus` }}-->
+    <!--    {{ `fa` }}-->
     <!--  </span>-->
     <!--  <switch-field-->
     <!--    :label="'en'"-->
@@ -28,7 +28,7 @@ import { AppLogo } from '@/common'
 // const localeStub = ref(locale.value === 'en')
 //
 // const toggleLocale = () => {
-//   setLocale(locale.value === 'en' ? 'rus' : 'en')
+//   setLocale(locale.value === 'en' ? 'fa' : 'en')
 // }
 </script>
 
