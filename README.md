@@ -43,7 +43,7 @@ Digital discussions (from Nextodon or other platforms) can be brought to [Irania
 Our voting system incorporates a robust privacy-preserving architecture that leverages biometric documents and zero-knowledge proofs (ZKP) to enable secure, anonymous voting while maintaining voter authenticity. We currently support biometric passports. [(ICAO's Doc 9303)](https://www.icao.int/publications/documents/9303_p9_cons_en.pdf)
 
 #### Roadmap
-- [Add support for Iranian National ID card]()
+- [Add support for Iranian National ID card](/iranian-national-identification-card.md)
 - Add support for German National ID card (Ausweis)
   
 ### Identity Verification using passport
