@@ -77,7 +77,6 @@
       :icon-left="$icons.announce"
       :is-centered="true"
     />
-
     <h3 class="about__title">
       {{ $t('about.step-4-title') }}
     </h3>
@@ -173,9 +172,11 @@ import {
 .about__header {
   width: 100%;
 }
+
 h2 {
   font-family: 'Vazir' !important;
 }
+
 .about__tip {
   width: 100%;
 }
@@ -333,9 +334,11 @@ h2 {
   text-align: center;
   gap: toRem(64);
 }
+
 .about__title {
   font-family: 'Vazir';
 }
+
 .about__icon-divider {
   align-self: center;
   margin: -#{toRem(64)} 0;

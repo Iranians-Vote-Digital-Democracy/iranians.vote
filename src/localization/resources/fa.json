@@ -1,4 +1,13 @@
 {
+  "appName": "ایرانیان رای می‌دهند",
+  "header":{
+    "blog":"بلاگ",
+    "home":"خانه",
+    "about":"درباره"
+  },
+  "blog":{
+    "comingSoon":"به‌زودی"
+  },
   "validations": {
     "field-error_required": "لطفا این فیلد را پر کنید",
     "field-error_email": "فیلد باید یک ایمیل معتبر باشد"

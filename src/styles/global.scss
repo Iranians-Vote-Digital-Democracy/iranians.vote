@@ -1,11 +1,12 @@
 /* stylelint-disable declaration-no-important */
 /* stylelint-disable unit-disallowed-list */
 @font-face {
-  font-family: 'Vazir';
-  src: url('../assets/font/Vazir.woff2');
+  font-family: "Vazir";
+  src: url("../assets/font/Vazir.woff2");
 }
+
 html {
-  font-family: 'Vazir', var(--app-font-family);
+  font-family: "Vazir", var(--app-font-family);
   overflow: auto !important;
   -webkit-overflow-scrolling: touch !important;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +18,8 @@ html {
 }
 
 /* stylelint-disable-next-line */
-body, #app {
+body,
+#app {
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -45,9 +47,11 @@ p,
 a {
   font-size: toRem(16);
 }
+
 .app-button {
-  font-family: 'Vazir' !important;
+  font-family: "Vazir" !important;
 }
+
 button {
   border: none;
   width: auto;
@@ -88,7 +92,9 @@ ul {
 p {
   line-height: 2;
 
-  @include respond-to(tablet) { line-height: 1.6; }
+  @include respond-to(tablet) {
+    line-height: 1.6;
+  }
 }
 
 h1,

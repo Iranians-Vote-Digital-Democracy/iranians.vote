@@ -80,9 +80,9 @@
 
 <script setup lang="ts">
 import { AppButton, Icon } from '@/common'
-import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
 import { Devices, ICON_NAMES, ROUTE_NAMES } from '@/enums'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 // import { config } from '@config'
 
 const { t } = useI18n({ useScope: 'global' })
@@ -251,6 +251,7 @@ const appLinks = computed(() => {
   color: var(--text-primary-main);
   font-weight: 700;
   font-family: 'Vazir';
+
   &:hover {
     color: var(--text-primary-main);
   }

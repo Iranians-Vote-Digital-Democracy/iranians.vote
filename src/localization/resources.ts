@@ -1,5 +1,5 @@
-import rus from './resources/rus.json'
+import fa from './resources/fa.json'
 
 export default {
-  messages: { rus },
+  messages: { fa },
 }

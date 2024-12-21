@@ -33,6 +33,11 @@ const routes: Array<RouteRecordRaw> = [
     name: ROUTE_NAMES.about,
     component: () => import('@/pages/About'),
   },
+  {
+    path: '/blog',
+    name: ROUTE_NAMES.blog,
+    component: () => import('@/pages/Blog'),
+  },
 ]
 
 const router = createRouter({
@@ -47,5 +52,4 @@ const router = createRouter({
     }
   },
 })
-
-export { router, useRouter, useRoute }
+export { router, useRoute, useRouter }
