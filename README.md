@@ -21,16 +21,16 @@
     - [Dealing with env variables](#dealing-with-env-variables)
 
 ## Introduction
-The initial model of Iranians.vote consists of two parts: “Dialogue” and “Trustworthy Voting.” Trustworthiness includes guaranteeing vote non-repeatability, voter uniqueness, complete protection of voter identity and privacy, and transparency in result calculation.
+The initial model of Iranians.vote consists of two parts: Dialogue and Trustworthy Voting. Trustworthiness includes guaranteeing vote non-repeatability, voter uniqueness, complete protection of voter identity and privacy, and transparency in tallying and finding social choices.
 
 ## Roadmap
 * Add newsletter, and collaboration infrastructure for the entire platform  
-* Playground for familiarization with processes and testing games  
+* Playground for familiarization with the processes and testing the games  
 * Implement experimental platform in a democracy (goe26) and analyze and publish findings
 
 ## Mobile Apps
-* [Iranians Vote Android App](https://github.com/tcfev/iranians-vote-android)
-* [Iranians Vote iOS App](https://github.com/tcfev/iranians-vote-ios)
+* [Iranians Vote Android App](https://github.com/Iranians-Vote-Digital-Democracy/iranians-vote-android)
+* [Iranians Vote iOS App](https://github.com/Iranians-Vote-Digital-Democracy/iranians-vote-ios)
   
 ## Dialogue Section
 [Nextodon](https://github.com/tcfev/Nextodon) is a social network compatible with Fediverse and Mastodon with additional features that facilitate structured group dialogue. Nextodon provides written discussion capabilities, basic polling features, and a basic infrastructure for crypto economy.
@@ -43,7 +43,7 @@ Digital discussions (from Nextodon or other platforms) can be brought to [Irania
 Our voting system incorporates a robust privacy-preserving architecture that leverages biometric documents and zero-knowledge proofs (ZKP) to enable secure, anonymous voting while maintaining voter authenticity. We currently support biometric passports. [(ICAO's Doc 9303)](https://www.icao.int/publications/documents/9303_p9_cons_en.pdf)
 
 #### Roadmap
-- Add support for Iranian National ID card
+- [Add support for Iranian National ID card]()
 - Add support for German National ID card (Ausweis)
   
 ### Identity Verification using passport
