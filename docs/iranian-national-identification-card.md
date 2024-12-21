@@ -1,10 +1,10 @@
 ## **Iranian National ID Card**
-***This document is a work in progress.***
 
-Around 65 million Iranians hold the smart card called *kart e melli hooshmand* کارت ملی هوشمند. [[1]](https://www.isna.ir/news/1403092215977/%D8%B9%D9%84%D8%AA-%D8%AA%D8%A3%D8%AE%DB%8C%D8%B1-%D8%AF%D8%B1-%D8%B5%D8%AF%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA) 
+Around 65 million Iranians hold the smart Iranian identity card (NID) or کارت ملی هوشمند [[1]](https://www.isna.ir/news/1403092215977/%D8%B9%D9%84%D8%AA-%D8%AA%D8%A3%D8%AE%DB%8C%D8%B1-%D8%AF%D8%B1-%D8%B5%D8%AF%D9%88%D8%B1-%DA%A9%D8%A7%D8%B1%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA).
 
+National Organization for Civil Registration is the main body in charge of the NIDs and [Matiran Co.](https://www.linkedin.com/company/matiran/about/), is believed to be the main developer of (all or some parts of) the software on the cards.
 
-As we are investigating Matiran's protected SDK for the national ID card and finding ways to communicate with the NID we decided to gradually share our findings and documents with you.
+We are currently investigating one of the Matiran's protected SDKs used by a 3rd party application [(Dastine)](pki.co.ir), and will gradually share our findings with you as we proceed. If you are interested in reverse-engineering next to us, an expert in smart cards, ex-employee of any of the named organisations having worked on the tech, please get in touch.
 
 ## Unpackingn Process
 Matiran, the devoloper of the NID, has published a software development kit which can be found in its original form [here](/src/assets/matiran-sdk/MDAS-Client_x64.dll).  
@@ -51,7 +51,7 @@ Unpacked [DLL](/src/assets/matiran-sdk/dump_oep-modified_sec_fixedIAT.dll).
 ### **Card Readers & Devices:** 
 
 * [NFC Reader/NFC Writer ACR1252U USB NFC III](https://www.amazon.de/ACR1252U-Kartenleseger%C3%A4t-Forum-Zertifiziert-kompatibel-RFID-Card/dp/B01KIKBYAG)  
-* [NFC Reader Writer ACR122U ISO 14443A/b](https://www.amazon.de/ACR122U-Software-Compatible-Supports-Various-White/dp/B0CHQW1D26/)
+
 ####
 * [https://www.futronic-tech.com/](https://www.biometricsupply.com/product/futronic-fs10/)  
 * [https://www.logidata-int.fr/en/26-epass3003.html](https://www.logidata-int.fr/en/26-epass3003.html)   
