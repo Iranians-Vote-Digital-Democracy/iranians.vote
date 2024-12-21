@@ -26,12 +26,6 @@ Eventually we I had to verify every single imported function to make sure we had
 
 Unpacked [DLL](/src/assets/matiran-sdk/dump_oep-modified_sec_fixedIAT.dll).
 
-## Keywords
-
-- SOC
-- MOC
-- RSA, ECDH
-- Antiyes
 ---
 ### **National Developer of the Card OS (Matiran)**
 
