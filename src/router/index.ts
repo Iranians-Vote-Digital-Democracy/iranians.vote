@@ -5,7 +5,8 @@ import {
   useRoute,
   useRouter,
 } from 'vue-router'
-
+import BlogList from '@/pages/Blog/BlogList.vue'
+import BlogPost from '@/pages/Blog/BlogPost.vue'
 import { ROUTE_NAMES } from '@/enums'
 
 const routes: Array<RouteRecordRaw> = [
@@ -33,11 +34,8 @@ const routes: Array<RouteRecordRaw> = [
     name: ROUTE_NAMES.about,
     component: () => import('@/pages/About'),
   },
-  {
-    path: '/blog',
-    name: ROUTE_NAMES.blog,
-    component: () => import('@/pages/Blog'),
-  },
+  { path: '/blog', name: 'BlogList', component: BlogList },
+  { path: '/blog/:id', name: 'BlogPost', component: BlogPost },
 ]
 
 const router = createRouter({

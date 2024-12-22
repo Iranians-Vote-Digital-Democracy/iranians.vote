@@ -6,6 +6,8 @@
     "about":"درباره"
   },
   "blog":{
+    "blogs":"بلاگ‌ها",
+    "title":"عنوان",
     "comingSoon":"به‌زودی"
   },
   "validations": {

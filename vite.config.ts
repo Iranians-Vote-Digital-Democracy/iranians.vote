@@ -42,7 +42,6 @@ export default defineConfig(({ mode }) => {
     plugins: [
       vue(),
       vitePluginMarkdown({ mode: [Mode.HTML, Mode.TOC, Mode.VUE] }),
-
       createSvgIconsPlugin({
         iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
         symbolId: '[name]',

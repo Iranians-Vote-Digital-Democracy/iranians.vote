@@ -2,14 +2,14 @@
   <div class="app-logo">
     <div class="app-logo__brand">
       <p class="app-logo__img">
-        {{ $t('Iranians.vote') }}
+        {{ $t('appName') }}
       </p>
     </div>
     <nav class="app-logo__nav">
       <router-link class="app-logo__nav-item" :to="{ name: $routes.app }">
         {{ $t('header.home') }}
       </router-link>
-      <router-link class="app-logo__nav-item" :to="{ name: $routes.blog }">
+      <router-link class="app-logo__nav-item" :to="{ name: 'BlogList' }">
         {{ $t('header.blog') }}
       </router-link>
       <router-link class="app-logo__nav-item" :to="{ name: $routes.about }">
