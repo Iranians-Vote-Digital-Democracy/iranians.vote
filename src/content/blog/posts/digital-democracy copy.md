@@ -1,6 +1,6 @@
 ---
-id: 500
-title: "test"
+id: 5
+title: "hihi hi"
 excerpt: "this is excerpt"
 ---
 

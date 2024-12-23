@@ -3,4 +3,5 @@ export enum ROUTE_NAMES {
   techDoc = 'tech-doc',
   guide = 'guide',
   about = 'about',
+  notFound = 'notFound',
 }
