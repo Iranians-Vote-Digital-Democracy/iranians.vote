@@ -49,10 +49,11 @@
 import { Icon } from '@/common'
 import { ICON_NAMES } from '@/enums'
 import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 
-const { t } = useI18n()
+const { t } = useI18n({ useScope: 'global' })
 
-const steps = [
+const steps = computed(() => [
   {
     iconName: ICON_NAMES.passport,
     title: t('how-to.step-1-title'),
@@ -73,7 +74,7 @@ const steps = [
     title: t('how-to.step-4-title'),
     description: t('how-to.step-4-desc'),
   },
-]
+])
 </script>
 
 <style scoped lang="scss">

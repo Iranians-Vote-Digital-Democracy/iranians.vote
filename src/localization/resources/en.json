@@ -32,8 +32,12 @@
     "subtitle": "ُTrusted polls for Iranians",
     "desc-title": "From Digital Citizenship to Political Agency",
     "desc": "\"Iranians Vote\" is the most efficient and advanced digital democracy toolkit for planning the transition from the islamic state and rebuilding Iran by returning to the will of the people. Conducting countless polls and referendums, easily, securely and reliably, is at your disposal.",
-    "timer-title": "Voting begins:",
-    "disabled-msg": "Coming soon!"
+    "counter-start-title": "Starts in:",
+    "counter-end-title": "Time left:",
+    "disabled-msg": "Coming soon!",
+    "app-store-link": "(Soon) for iOS",
+    "gplay-link": "For Android",
+    "vote-link": "Learn more"
   },
   "announce": {
     "title": "",
@@ -60,7 +64,150 @@
     "link-btn": "Discord",
     "disabled-msg": "Coming soon!"
   },
+  "repos": {
+    "title": "Open-source repositories",
+    "desc": "The audit was performed by <a href='https://halborn.com' target='_blank'>Halborn.com</a>. Halborn is a leader thanks to years of experience auditing blockchain protocol security.",
+    "more-link": "Read the tech doc"
+  },
+  "repos-item": {
+    "badge-text": "Audited",
+    "badge-link": "View"
+  },
   "tech-doc": {
     "back-link": "Back"
+  },
+  "faq": {
+    "title": "FAQ",
+    "more-btn": "Show more",
+    "hide-more-btn": "Hide",
+    "items": [
+      {
+        "q": "Which passport can be used for voting?",
+        "a": "Only a foreign biometric passport whose validity does not expire on the voting date can be used. An ordinary passport cannot be used because verifying authenticity is too complex."
+      },
+      {
+        "q": "What passport data is processed to create the voting credential?",
+        "a": "Only the following data is used for voting registration: nationality; proof based on [Zero-Knowledge](https://en.wikipedia.org/wiki/Zero-knowledge_proof) that you are over 18 at the time of voting; issuing authority certificate. Name, surname, date of birth and other personal data are not transmitted and remain only on your phone."
+      },
+      {
+        "q": "What does anonymizing passport data mean?",
+        "a": "When the passport is received after registration in the voting service, the passport data is hashed using a [hash](https://en.wikipedia.org/wiki/Hash_function) and [cryptographic salt](https://en.wikipedia.org/wiki/Salt_(cryptography)). This allows checking uniqueness of the passport without being able to trace voters' personal data."
+      },
+      {
+        "q": "Can one know from passport data that a person registered to vote?",
+        "a": "No, because the data is anonymized in the registration service (see above). Even with access to the entire passport database it is impossible to identify registered voters."
+      },
+      {
+        "q": "What is blockchain and why is it used as the voting platform?",
+        "a": "Simply put, a blockchain is a decentralized public database whose action history cannot be forged. It is suitable for voting because votes are practically impossible to fake and results are transparent and accessible to everyone."
+      },
+      {
+        "q": "What kind of phone is suitable for scanning a passport?",
+        "a": "To scan a passport you need an Android or iOS phone with an internal NFC chip (used for contactless payments)."
+      },
+      {
+        "q": "Why hold the camera over the passport page if data is on the chip?",
+        "a": "The passport data on the chip is encrypted and the app uses the code on the photo page to decrypt it."
+      },
+      {
+        "q": "Can a passport be forged during scanning?",
+        "a": "To verify authenticity the system uses a public registry of issuing authorities (similar to systems in airports). Forging would require access to the issuing authority."
+      },
+      {
+        "q": "Can it be determined which candidate an anonymous user voted for?",
+        "a": "No, the user's vote is mixed with other votes in the election. Even the voter cannot later see who they voted for if they exit the app or delete it."
+      },
+      {
+        "q": "Which blockchain is used for voting?",
+        "a": "The [Rarimo](https://docs.rarimo.com/) protocol is used for identification and anonymization, and any EVM blockchain can be used for voting."
+      },
+      {
+        "q": "Can someone vote twice with one passport but different phones?",
+        "a": "No. During registration anonymized passport data is checked for uniqueness so double voting is impossible. Also, if you lose access to your phone after registering you cannot participate with another phone in the same vote."
+      },
+      {
+        "q": "Who creates the vote and sets the list of candidates?",
+        "a": "The organizer has the right to publish an online ballot with candidates which is then shown in the app. Malicious users cannot forge or spam the list of votes."
+      },
+      {
+        "q": "Blockchain transactions cost fees; who pays for voting?",
+        "a": "Fees are paid by a proxy server (the organizer) that builds and submits transactions to the network. The server cannot reveal voter identity or change their choice because the vote is protected by a cryptographic proof; any attempt to alter it invalidates the proof."
+      }
+    ]
+  },
+  "guide": {
+    "steps-title": "Step-by-step guide",
+    "step-prefix": "Step {idx}:",
+    "anchor-link": "Guide",
+    "android": {
+      "title": "Download Android App",
+      "subtitle": "If you use the Android app you can complete the whole process inside the app and don't need to vote on the website",
+      "step-1-title": "Home Screen",
+      "step-1-desc": "After downloading the app you can go to authorization on the home screen. Authorization uses the biometric passport to generate an anonymous fingerprint that later can be used to participate in supporting the manifesto.",
+      "step-2-title": "Authorization in poll",
+      "step-2-desc": "After the ballot / manifesto appears you can open the text and to vote you will need to authorize via a biometric passport.",
+      "step-3-title": "Scan photo",
+      "step-3-desc": "Hold the camera over the first page with the photo. The key over the photo is used to receive valid data from the chip.",
+      "step-4-title": "Scan chip",
+      "step-4-desc": "Hold the passport cover to the phone as shown in the image.",
+      "step-5-title": "Participate in manifesto",
+      "step-5-desc": "Next you can agree with the manifesto text, to do this press the 'Participate' button. In this process an anonymous fingerprint is used and the participant counter increases by one.\n\n\n The participant counter (manifesto supporters) is stored on the blockchain ledger. Every addition is protected by cryptographic proof. Adding multiple participants simultaneously or otherwise does not forge the number of participants.",
+      "step-6-title": "Finish and security",
+      "step-6-desc": "After that you can press the 'Next' button for other participants or press the exit button, then the entire chain from authorization to unique fingerprint is severed and even if your phone is taken, no one can prove that you participated."
+    },
+    "ios": {
+      "title": "Download Apple (iOS) App",
+      "subtitle": "The app will be released soon",
+      "web-voting-link": "Open voting site",
+      "step-1-title": "Authorization",
+      "step-1-desc": "After downloading the app you can go to authorization on the home screen. Authorization uses the biometric passport to generate an anonymous fingerprint that later can be used to participate in supporting the manifesto.",
+      "step-2-title": "Scan photo",
+      "step-2-desc": "Hold the camera over the first page with the photo. The key over the photo is used to receive valid data from the chip.",
+      "step-3-title": "Scan chip",
+      "step-3-desc": "Hold the passport cover to the phone as shown in the image.",
+      "step-4-title": "Select manifesto",
+      "step-4-desc": "On the home screen select the **Support** block. Browse the manifesto text and click sign.",
+      "step-5-title": "Authorization confirmation",
+      "step-5-desc": "Anonymous proof of participation right will be sent to the smart contract on the blockchain.",
+      "step-6-title": "Wait for blockchain confirmation",
+      "step-6-desc": "The app will accept your authorization and send an anonymous proof that you have the right to sign the manifesto and thus the number of participants increases by one."
+    },
+    "title": "What to do if the app is not available in the App Store?",
+    "tip-title": "Enable VPN",
+    "tip-msg": "Always use a VPN when working with the app because some functionality may be blocked by internet providers.",
+    "variant-1-title": "Option 1 – If you have no App Store subscriptions",
+    "variant-1-step-1": "1. In the App Store application open the account settings. \n 2. Change the Apple ID region to United States. \n\n This is a temporary action; you can revert settings after downloading the app.\n",
+    "variant-1-step-2": "Use the following address for the region:\n\n Street: 320 East 42nd Street, 1604 \n City: New York \n State: NY \n ZIP: 10036 \n\n To change 'Country/Region' to United States. \n\n After changing the region the app should be available in the App Store",
+    "variant-2-title": "Option 2 – Create a new Apple ID \n (keeping the old account)",
+    "variant-2-step-1": "Creating a new Apple ID instead of changing the Apple ID region is an option. \n\n Log out of your current Apple ID, go to 'Settings' and click the Apple ID name and avatar. Press 'Sign out' and go back to 'Sign in'. Then click 'Don't have an Apple ID or forgot it?' and 'Create Apple ID'.",
+    "variant-2-step-2": "Using an email address not used before, following the prompts create a new Apple ID. \n\n Street: 320 East 42nd Street, 1604 \n City: New York \n State: NY \n ZIP: 10036 \n\n After completing the steps you will receive an email from Apple to verify the new email address. \n\n",
+    "post-step": "After completing the above steps open the App Store and download the app. \n\n After completion enable automatic updates: \n 1. Open iPhone 'Settings' \n 2. Select 'App Store' \n 3. Enable 'App Updates'",
+    "post-step-accent": "'Freedom Tool'.",
+    "post-tip": "You can vote in the app using the new Apple ID and then log out and return to your old account. All data of your old account is fully retained."
+  },
+  "guide-header": {
+    "back-link": "Back"
+  },
+  "about": {
+    "title": "How the app works",
+    "tip-title": "Enable VPN",
+    "tip-msg": "Always use a VPN when working with the app because some functionality may be blocked by internet providers.",
+    "step-1-desc-title": "Home screen",
+    "step-1-desc": "After downloading the app you can learn about the start of polls or manifestos on the home screen. A ballot is automatically added to the list as soon as the organizer publishes it online. \n\n Downloading apps carries no risk. In theory there can be many apps to display ballots. \n\n",
+    "step-1-desc-accent": "Always verify trusted links from the organizer!",
+    "step-2-desc-title": "Authorization in poll",
+    "step-2-desc": "After the ballot / manifesto appears you can open the text and to vote you will need to authorize via a biometric passport.",
+    "step-3-title": "You need a biometric (foreign) passport for authorization",
+    "step-3-desc-1": "1. Hold the camera over the first page with the photo. The key over the photo is used to receive valid data from the chip.",
+    "step-3-desc-2": "2. Hold the passport cover to the phone as shown in the image.",
+    "announce-msg": "During authorization your data does not leave the device and is used to generate a unique fingerprint where personal information is not stored and is not linked to passport data. Forming this fingerprint takes time (4 to 10 minutes) because the cryptography used (zero-knowledge proofs) requires extensive computation and for this reason the app itself is over 200MB.",
+    "step-4-title": "Voting",
+    "step-4-desc-1": "Next you need to register for voting, to do this press the 'Participate' button. In this process an anonymous fingerprint is used and you are given a voting right (token).",
+    "step-4-desc-2": "The voting right is stored only on your phone. If after registering you delete the app or clear data you will lose your voting right in this election.",
+    "step-5-desc": "After your anonymous vote is submitted it is stored on the blockchain ledger. The voting results cannot be altered or forged. The validity of the vote is provable without revealing personal data.",
+    "step-6-desc-1": "After finishing you can keep the app for other polls or press the exit button, then the entire chain from authorization to unique fingerprint is severed and even if your phone is taken no one can prove who you voted for.",
+    "step-6-desc-2": "Note that if after voting you press exit or delete the entire app you will need to authorize again for subsequent polls.",
+    "more-title": "Read more about the technical implementation:",
+    "more-link": "Learn more"
   }
 }

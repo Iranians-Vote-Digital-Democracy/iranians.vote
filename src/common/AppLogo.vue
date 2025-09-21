@@ -2,7 +2,7 @@
   <div class="app-logo">
     <div class="app-logo__brand">
       <p class="app-logo__img">
-        {{ $t('Iranians.vote') }}
+        {{ $t('appName') }}
       </p>
     </div>
     <nav class="app-logo__nav">
