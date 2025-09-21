@@ -130,6 +130,13 @@ const appLinks = computed(() => {
   padding-top: toRem(300);
   padding-bottom: toRem(160);
 
+  /* Adjust background for LTR languages */
+  [dir='ltr'] & {
+    background-size: contain;
+    padding-top: toRem(100);
+    padding-bottom: toRem(80);
+  }
+
   @include respond-to(small) {
     padding-top: toRem(32);
     padding-bottom: toRem(50);
@@ -139,11 +146,19 @@ const appLinks = computed(() => {
 }
 
 .hero-banner__title {
-  font-family: 'Vazir' !important;
   font-size: toRem(64);
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: -4%;
+
+  /* Direction-aware font family */
+  [dir='rtl'] & {
+    font-family: 'Vazir' !important;
+  }
+
+  [dir='ltr'] & {
+    font-family: system-ui, -apple-system, sans-serif;
+  }
 
   @include respond-to(small) {
     font-size: toRem(32);
@@ -182,23 +197,52 @@ const appLinks = computed(() => {
   margin: 0 auto;
 
   @include respond-to(small) {
-    text-align: right;
     max-width: 90%;
+  }
+
+  /* Direction-aware text alignment */
+  [dir='rtl'] & {
+    text-align: right;
+  }
+
+  [dir='ltr'] & {
+    text-align: left;
+  }
+
+  @include respond-to(small) {
+    [dir='rtl'] & {
+      text-align: right;
+    }
   }
 }
 
 .hero-banner__desc-title {
   font-family: 'Vazir';
-  text-align: right;
   white-space: pre-line;
   margin-bottom: toRem(24);
+
+  /* Direction-aware text alignment */
+  [dir='rtl'] & {
+    text-align: right;
+  }
+
+  [dir='ltr'] & {
+    text-align: left;
+  }
 }
 
 .hero-banner__desc {
-  text-align: right;
   white-space: pre-line;
   margin-bottom: toRem(24);
-  line-height: 1.5;
+
+  /* Direction-aware text alignment */
+  [dir='rtl'] & {
+    text-align: right;
+  }
+
+  [dir='ltr'] & {
+    text-align: left;
+  }
 }
 
 .hero-banner__desc-counter-wrp {

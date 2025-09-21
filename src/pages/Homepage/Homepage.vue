@@ -50,12 +50,20 @@ import { Faq } from '@/pages/Homepage/components'
 }
 
 .homepage__sign {
-  text-align: right;
   white-space: nowrap;
   align-self: flex-end;
   font-weight: 500;
   font-size: toRem(16);
   color: var(--text-primary-main);
+
+  /* Direction-aware text alignment */
+  [dir='rtl'] & {
+    text-align: right;
+  }
+
+  [dir='ltr'] & {
+    text-align: left;
+  }
 
   @include respond-to(small) {
     align-self: center;
