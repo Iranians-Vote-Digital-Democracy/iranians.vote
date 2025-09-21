@@ -45,32 +45,20 @@
         <!--        </template>-->
 
         <div class="hero-banner__desc-links">
-          <router-link
-            v-for="(item, idx) in appLinks"
-            :key="idx"
-            class="hero-banner__desc-links-item"
-            :to="{
-              name: item.routeName,
-              params: {
-                deviceType: item.deviceType,
-              },
-            }"
-          >
-            <icon
-              class="hero-banner__desc-links-item-icon"
-              :style="{
-                ...(item?.iconColor && { color: item?.iconColor }),
-              }"
-              :name="item.iconName"
-            />
+          <router-link v-for="(item, idx) in appLinks" :key="idx" class="hero-banner__desc-links-item" :to="{
+            name: item.routeName,
+            params: {
+              deviceType: item.deviceType,
+            },
+          }">
+            <icon class="hero-banner__desc-links-item-icon" :style="{
+              ...(item?.iconColor && { color: item?.iconColor }),
+            }" :name="item.iconName" />
             <span class="hero-banner__desc-links-item-text">
               {{ item.text }}
             </span>
 
-            <app-button
-              class="hero-banner__desc-links-item-btn"
-              :text="$t('hero-banner.vote-link')"
-            />
+            <app-button class="hero-banner__desc-links-item-btn" :text="$t('hero-banner.vote-link')" />
           </router-link>
         </div>
       </div>
@@ -262,9 +250,8 @@ const appLinks = computed(() => {
 
 .hero-banner__desc-counter {
   align-self: center;
-  width: auto;
+  width:auto;
 }
-
 .hero-banner__desc-links {
   display: flex;
   gap: toRem(24);

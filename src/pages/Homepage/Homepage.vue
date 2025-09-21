@@ -11,12 +11,7 @@
 
       <div class="homepage__sign">
         {{ `Powered by: ` }}
-        <a
-          class="homepage__sign-link"
-          href="https://freedomtool.org"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
+        <a class="homepage__sign-link" href="https://freedomtool.org" target="_blank" rel="noreferrer noopener">
           {{ `Freedom Tool` }}
         </a>
       </div>
@@ -25,13 +20,13 @@
 </template>
 
 <script setup lang="ts">
-import { Repos, HeroBanner, HowTo } from './components'
-import { Faq } from '@/pages/Homepage/components'
+import { Faq } from '@/pages/Homepage/components';
+import { HeroBanner, HowTo, Repos } from './components';
 </script>
 
 <style scoped lang="scss">
 .homepage {
-  & > * {
+  &>* {
     max-width: 100%;
     width: 100%;
   }
