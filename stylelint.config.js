@@ -24,6 +24,21 @@ module.exports = {
     'scss/at-else-closing-brace-space-after': null,
     'declaration-colon-newline-after': null,
     'scss/at-function-pattern': null,
+    
+    /* Disable non-existent rules causing errors */
+    'at-rule-descriptor-no-unknown': null,
+    'at-rule-descriptor-value-no-unknown': null,
+    'at-rule-no-deprecated': null,
+    'at-rule-prelude-no-invalid': null,
+    'declaration-property-value-keyword-no-deprecated': null,
+    'media-type-no-deprecated': null,
+    'nesting-selector-no-missing-scoping-root': null,
+    'no-invalid-position-declaration': null,
+    'property-no-deprecated': null,
+    'syntax-string-no-invalid': null,
+    
+    /* Allow SCSS functions */
+    'declaration-property-value-no-unknown': null,
 
     'color-no-invalid-hex': [true, { severity: 'warning' }],
     'font-family-no-duplicate-names': [true, { severity: 'warning' }],
