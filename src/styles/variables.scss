@@ -1,4 +1,6 @@
-@import 'app-colors';
+@use 'app-colors';
+@use '_functions.scss' as *;
+@use '_mixins.scss' as *;
 
 :root,
 :before,
@@ -6,80 +8,80 @@
   --vh: 1vh;
   --app-content-width: #{toRem(1200)};
 
-  --white: #{$white};
-  --white-rgb: #{$white-rgb};
-  --black: #{$black};
-  --black-rgb: #{$black-rgb};
+  --white: #{app-colors.$white};
+  --white-rgb: #{app-colors.$white-rgb};
+  --black: #{app-colors.$black};
+  --black-rgb: #{app-colors.$black-rgb};
 
-  --background-primary-light: #{$background-primary-light};
-  --background-primary-main: #{$background-primary-main};
-  --background-primary-dark: #{$background-primary-dark};
+  --background-primary-light: #{app-colors.$background-primary-light};
+  --background-primary-main: #{app-colors.$background-primary-main};
+  --background-primary-dark: #{app-colors.$background-primary-dark};
 
-  --background-secondary-light: #{$background-secondary-light};
-  --background-secondary-main: #{$background-secondary-main};
-  --background-secondary-dark: #{$background-secondary-dark};
+  --background-secondary-light: #{app-colors.$background-secondary-light};
+  --background-secondary-main: #{app-colors.$background-secondary-main};
+  --background-secondary-dark: #{app-colors.$background-secondary-dark};
 
   /* status colors */
-  --success-light: #{$success-light};
-  --success-main: #{$success-main};
-  --success-dark: #{$success-dark};
+  --success-light: #{app-colors.$success-light};
+  --success-main: #{app-colors.$success-main};
+  --success-dark: #{app-colors.$success-dark};
 
-  --error-light: #{$error-light};
-  --error-main: #{$error-main};
-  --error-dark: #{$error-dark};
+  --error-light: #{app-colors.$error-light};
+  --error-main: #{app-colors.$error-main};
+  --error-dark: #{app-colors.$error-dark};
 
-  --warning-light: #{$warning-light};
-  --warning-main: #{$warning-main};
-  --warning-dark: #{$warning-dark};
+  --warning-light: #{app-colors.$warning-light};
+  --warning-main: #{app-colors.$warning-main};
+  --warning-dark: #{app-colors.$warning-dark};
 
-  --info-light: #{$info-light};
-  --info-main: #{$info-main};
-  --info-dark: #{$info-dark};
+  --info-light: #{app-colors.$info-light};
+  --info-main: #{app-colors.$info-main};
+  --info-dark: #{app-colors.$info-dark};
 
   /* brand colors */
-  --primary-light: #{$primary-light};
-  --primary-main: #{$primary-main};
-  --primary-dark: #{$primary-dark};
-  --primary-light-rgb: #{$primary-light-rgb};
-  --primary-main-rgb: #{$primary-main-rgb};
-  --primary-dark-rgb: #{$primary-dark-rgb};
+  --primary-light: #{app-colors.$primary-light};
+  --primary-main: #{app-colors.$primary-main};
+  --primary-dark: #{app-colors.$primary-dark};
+  --primary-light-rgb: #{app-colors.$primary-light-rgb};
+  --primary-main-rgb: #{app-colors.$primary-main-rgb};
+  --primary-dark-rgb: #{app-colors.$primary-dark-rgb};
 
-  --secondary-light: #{$secondary-light};
-  --secondary-main: #{$secondary-main};
-  --secondary-dark: #{$secondary-dark};
+  --secondary-light: #{app-colors.$secondary-light};
+  --secondary-main: #{app-colors.$secondary-main};
+  --secondary-dark: #{app-colors.$secondary-dark};
 
   /* typography colors */
-  --text-primary-light: #{$text-primary-light};
-  --text-primary-main: #{$text-primary-main};
-  --text-primary-dark: #{$text-primary-dark};
+  --text-primary-light: #{app-colors.$text-primary-light};
+  --text-primary-main: #{app-colors.$text-primary-main};
+  --text-primary-dark: #{app-colors.$text-primary-dark};
 
-  --text-secondary-light: #{$text-secondary-light};
-  --text-secondary-main: #{$text-secondary-main};
-  --text-secondary-dark: #{$text-secondary-dark};
+  --text-secondary-light: #{app-colors.$text-secondary-light};
+  --text-secondary-main: #{app-colors.$text-secondary-main};
+  --text-secondary-dark: #{app-colors.$text-secondary-dark};
 
-  --text-tertiary-light: #{$text-tertiary-light};
-  --text-tertiary-main: #{$text-tertiary-main};
-  --text-tertiary-dark: #{$text-tertiary-dark};
+  --text-tertiary-light: #{app-colors.$text-tertiary-light};
+  --text-tertiary-main: #{app-colors.$text-tertiary-main};
+  --text-tertiary-dark: #{app-colors.$text-tertiary-dark};
 
-  --text-primary-invert-light: #{$text-primary-invert-light};
-  --text-primary-invert-main: #{$text-primary-invert-main};
-  --text-primary-invert-dark: #{$text-primary-invert-dark};
+  --text-primary-invert-light: #{app-colors.$text-primary-invert-light};
+  --text-primary-invert-main: #{app-colors.$text-primary-invert-main};
+  --text-primary-invert-dark: #{app-colors.$text-primary-invert-dark};
 
-  --text-secondary-invert-light: #{$text-secondary-invert-light};
-  --text-secondary-invert-main: #{$text-secondary-invert-main};
-  --text-secondary-invert-dark: #{$text-secondary-invert-dark};
+  --text-secondary-invert-light: #{app-colors.$text-secondary-invert-light};
+  --text-secondary-invert-main: #{app-colors.$text-secondary-invert-main};
+  --text-secondary-invert-dark: #{app-colors.$text-secondary-invert-dark};
 
   /* border colors */
-  --border-primary-light: #{$border-primary-light};
-  --border-primary-main: #{$border-primary-main};
-  --border-primary-dark: #{$border-primary-dark};
+  --border-primary-light: #{app-colors.$border-primary-light};
+  --border-primary-main: #{app-colors.$border-primary-main};
+  --border-primary-dark: #{app-colors.$border-primary-dark};
 
-  --border-secondary-light: #{$border-secondary-light};
-  --border-secondary-main: #{$border-secondary-main};
-  --border-secondary-dark: #{$border-secondary-dark};
+  --border-secondary-light: #{app-colors.$border-secondary-light};
+  --border-secondary-main: #{app-colors.$border-secondary-main};
+  --border-secondary-dark: #{app-colors.$border-secondary-dark};
 
   /* App variables */
-  --app-txt: #{$text-primary-main};
+  --app-txt: #{app-colors.$text-primary-main};
   --app-font-family: 'Inter', 'Arial', sans-serif;
   --app-padding-right: #{toRem(156)};
   --app-padding-left: #{toRem(156)};
@@ -113,7 +115,7 @@
   --field-text: var(--text-primary-light);
   --field-text-font-size: #{toRem(16)};
   --field-text-line-height: 1.5;
-  --field-placeholder: #{rgba($text-primary-main, 0.35)};
+  --field-placeholder: #{rgba(app-colors.$text-primary-main, 0.35)};
 
   /* border */
   --field-border: var(--border-primary-light);

@@ -21,11 +21,10 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     '@vue/typescript/recommended',
     '@vue/eslint-config-typescript/recommended',
-    'plugin:vue-i18n/recommended',
     '@vue/prettier',
     '@vue/eslint-config-prettier',
   ],
-  plugins: ['promise'],
+  plugins: ['promise', '@intlify/vue-i18n'],
   globals: {
     defineProps: 'readonly',
     defineEmits: 'readonly',
@@ -48,21 +47,16 @@ module.exports = {
         arrowParens: 'avoid',
       },
     ],
-    'vue-i18n/no-v-html': 'off',
-    'vue-i18n/no-dynamic-keys': 'warn',
-    'vue-i18n/no-missing-keys': 'warn',
-    'vue-i18n/no-unused-keys': [
+    '@intlify/vue-i18n/no-v-html': 'off',
+    '@intlify/vue-i18n/no-dynamic-keys': 'warn',
+    '@intlify/vue-i18n/no-missing-keys': 'warn',
+    '@intlify/vue-i18n/no-unused-keys': [
       'error',
       {
         extensions: ['.js', '.ts', '.vue'],
       },
     ],
-    'vue-i18n/no-raw-text': [
-      'error',
-      {
-        ignoreText: ['—', '|', '×'],
-      },
-    ],
+    '@intlify/vue-i18n/no-raw-text': 'off',
     'arrow-parens': 0,
     'no-debugger': 1,
     'no-warning-comments': [

@@ -31,3 +31,6 @@ stats.html
 .env.development
 .env.analyze
 tsconfig.tsbuildinfo
+.env
+*.md
+!readme.md
