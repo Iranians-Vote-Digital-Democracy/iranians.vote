@@ -30,8 +30,14 @@
   "hero-banner": {
     "title": "Freedom tool",
     "subtitle": "ُTrusted polls for Iranians",
+    "desc-title": "From Digital Citizenship to Political Agency",
+    "desc": "\"Iranians Vote\" is the most efficient and advanced digital democracy toolkit for planning the transition from the islamic state and rebuilding Iran by returning to the will of the people. Conducting countless polls and referendums, easily, securely and reliably, is at your disposal.",
     "timer-title": "Voting begins:",
     "disabled-msg": "Coming soon!"
+  },
+  "announce": {
+    "title": "",
+    "desc": ""
   },
   "how-to": {
     "title": "How to use",
