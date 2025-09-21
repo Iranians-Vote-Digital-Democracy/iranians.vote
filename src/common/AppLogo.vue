@@ -15,6 +15,9 @@
       <router-link class="app-logo__nav-item" :to="{ name: $routes.about }">
         {{ $t('header.about') }}
       </router-link>
+      <a class="app-logo__nav-item" href="/privacy-policy.html" target="_blank">
+        {{ $t('header.privacy') }}
+      </a>
     </nav>
   </div>
 </template>

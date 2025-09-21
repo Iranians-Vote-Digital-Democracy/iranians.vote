@@ -5,10 +5,7 @@
     </h2>
 
     <div class="faq__content">
-      <template
-        v-for="(item, idx) in faqContent.slice(0, questionsToShow)"
-        :key="idx"
-      >
+      <template v-for="(item, idx) in faqContent.slice(0, questionsToShow)" :key="idx">
         <div class="faq__item">
           <accordion :key="idx" class="faq__accordion">
             <template #head="{ accordion }">
@@ -17,30 +14,21 @@
                   {{ item.head }}
                 </div>
                 <div class="faq__accordion-head-indicator">
-                  <icon
-                    class="faq__accordion-head-indicator-icon"
-                    :class="{
-                      'faq__accordion-head-indicator-icon--active':
-                        accordion.isOpen,
-                    }"
-                    :name="$icons.chevronDown"
-                  />
+                  <icon class="faq__accordion-head-indicator-icon" :class="{
+                    'faq__accordion-head-indicator-icon--active':
+                      accordion.isOpen,
+                  }" :name="$icons.chevronDown" />
                 </div>
               </div>
             </template>
             <template #default>
               <div class="faq__accordion-body">
-                <vue-markdown
-                  class="faq__accordion-body-text"
-                  :source="item.body"
-                  :plugins="plugins"
-                  :options="{
-                    html: true,
-                    breaks: true,
-                    typographer: true,
-                    linkify: true,
-                  }"
-                />
+                <vue-markdown class="faq__accordion-body-text" :source="item.body" :plugins="plugins" :options="{
+                  html: true,
+                  breaks: true,
+                  typographer: true,
+                  linkify: true,
+                }" />
               </div>
             </template>
           </accordion>
@@ -50,13 +38,10 @@
 
       <collapse :is-shown="isAllQuestionsShown">
         <div class="faq__content-hidden-questions">
-          <template
-            v-for="(item, idx) in faqContent.slice(
-              questionsToShow,
-              faqContent.length - 1,
-            )"
-            :key="idx"
-          >
+          <template v-for="(item, idx) in faqContent.slice(
+            questionsToShow,
+            faqContent.length - 1,
+          )" :key="idx">
             <div class="faq__item">
               <accordion :key="idx" class="faq__accordion">
                 <template #head="{ accordion }">
@@ -65,30 +50,21 @@
                       {{ item.head }}
                     </div>
                     <div class="faq__accordion-head-indicator">
-                      <icon
-                        class="faq__accordion-head-indicator-icon"
-                        :class="{
-                          'faq__accordion-head-indicator-icon--active':
-                            accordion.isOpen,
-                        }"
-                        :name="$icons.chevronDown"
-                      />
+                      <icon class="faq__accordion-head-indicator-icon" :class="{
+                        'faq__accordion-head-indicator-icon--active':
+                          accordion.isOpen,
+                      }" :name="$icons.chevronDown" />
                     </div>
                   </div>
                 </template>
                 <template #default>
                   <div class="faq__accordion-body">
-                    <vue-markdown
-                      class="faq__accordion-body-text"
-                      :source="item.body"
-                      :plugins="plugins"
-                      :options="{
-                        html: true,
-                        breaks: true,
-                        typographer: true,
-                        linkify: true,
-                      }"
-                    />
+                    <vue-markdown class="faq__accordion-body-text" :source="item.body" :plugins="plugins" :options="{
+                      html: true,
+                      breaks: true,
+                      typographer: true,
+                      linkify: true,
+                    }" />
                   </div>
                 </template>
               </accordion>
@@ -98,10 +74,7 @@
         </div>
       </collapse>
 
-      <button
-        class="faq__show-btn"
-        @click="isAllQuestionsShown = !isAllQuestionsShown"
-      >
+      <button class="faq__show-btn" @click="isAllQuestionsShown = !isAllQuestionsShown">
         {{ isAllQuestionsShown ? $t('faq.hide-more-btn') : $t('faq.more-btn') }}
       </button>
     </div>
@@ -110,10 +83,10 @@
 
 <script setup lang="ts">
 import { Accordion, Collapse, Icon } from '@/common'
-import VueMarkdown from 'vue-markdown-render'
 import MarkdownItAnchor from 'markdown-it-anchor'
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import VueMarkdown from 'vue-markdown-render'
 
 const questionsToShow = 5
 

@@ -1,12 +1,13 @@
 {
   "appName": "ایرانیان رای می‌دهند",
-  "header":{
-    "blog":"بلاگ",
-    "home":"خانه",
-    "about":"درباره"
+  "header": {
+    "blog": "بلاگ",
+    "home": "خانه",
+    "about": "درباره",
+    "privacy": "حریم خصوصی"
   },
-  "blog":{
-    "comingSoon":"به‌زودی"
+  "blog": {
+    "comingSoon": "به‌زودی"
   },
   "validations": {
     "field-error_required": "لطفا این فیلد را پر کنید",
@@ -38,7 +39,6 @@
     "app-store-link": "(به‌زودی) برای iOS",
     "gplay-link": "برای Android",
     "vote-link": "توضیح بیش‌تر"
- 
   },
   "announce": {
     "title": "",

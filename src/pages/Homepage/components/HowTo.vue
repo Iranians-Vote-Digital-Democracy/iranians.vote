@@ -30,14 +30,8 @@
       </div>
 
       <div class="how-to__video-wrp">
-        <video
-          class="how-to__video"
-          controls
-          :autoplay="false"
-          poster="/images/video-poster.png"
-          width="100%"
-          height="100%"
-        >
+        <video class="how-to__video" controls :autoplay="false" poster="/images/video-poster.png" width="100%"
+          height="100%">
           <source src="/images/how-it-works.mp4" type="video/mp4" />
         </video>
       </div>
@@ -48,8 +42,8 @@
 <script setup lang="ts">
 import { Icon } from '@/common'
 import { ICON_NAMES } from '@/enums'
-import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n({ useScope: 'global' })
 

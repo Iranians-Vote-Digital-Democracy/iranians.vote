@@ -1,12 +1,13 @@
 {
   "appName": "Iranians.Vote",
-  "header":{
-    "blog":"blog",
+  "header": {
+    "blog": "blog",
     "home": "home",
-    "about":"about"
+    "about": "about",
+    "privacy": "privacy"
   },
-  "blog":{
-    "comingSoon":"coming soon"
+  "blog": {
+    "comingSoon": "coming soon"
   },
   "validations": {
     "field-error_required": "Please fill out this field",
@@ -47,16 +48,12 @@
     "title": "How to use",
     "step-1-title": "Secure Passport Scan",
     "step-1-desc": "When you scan your passport, it creates a unique code (\"hash\") right on your device, ensuring no personal data ever leaves your phone for complete privacy.",
-
     "step-2-title": "Creating a Unique Voting Pass",
     "step-2-desc": "The system generates a special 'voting pass' for you, keeping your identity private and preventing multiple votes.",
-
     "step-3-title": "Anonymous Voting",
     "step-3-desc": "Cast your vote anonymously; it's securely recorded on the blockchain, making it tamper-proof and non traceable. ",
-
     "step-4-title": "Transparent Results",
     "step-4-desc": "Once voting ends, results are available on the blockchain for anyone to see, ensuring immutability and no single-party control.",
-
     "more-link": "Learn More"
   },
   "invitation": {

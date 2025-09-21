@@ -3,23 +3,12 @@
     <app-logo class="app-navbar__logo" />
     <span class="app-navbar__locale-switcher">
       <template v-for="lang in orderedLangs" :key="lang">
-        <button
-          v-if="lang !== 'switch'"
-          type="button"
-          class="app-navbar__locale-btn"
-          :class="{ 'app-navbar__locale-btn--active': currentLocale === lang }"
-          @click="setLocale(lang as any)"
-        >
+        <button v-if="lang !== 'switch'" type="button" class="app-navbar__locale-btn"
+          :class="{ 'app-navbar__locale-btn--active': currentLocale === lang }" @click="setLocale(lang as any)">
           {{ lang.toUpperCase() }}
         </button>
-        <switch-field
-          v-else
-          class="app-navbar__locale-switch"
-          :label="''"
-          v-model="switchState"
-          @update:model-value="onSwitch"
-          :aria-label="`Toggle language: ${currentLocale}`"
-        />
+        <switch-field v-else class="app-navbar__locale-switch" :label="''" v-model="switchState"
+          @update:model-value="onSwitch" :aria-label="`Toggle language: ${currentLocale}`" />
       </template>
     </span>
   </div>
@@ -27,10 +16,10 @@
 
 <script lang="ts" setup>
 import { AppLogo } from '@/common'
-import { setLocale } from '@/localization'
-import { useI18n } from 'vue-i18n'
-import { computed, ref, watch } from 'vue'
 import { SwitchField } from '@/fields'
+import { setLocale } from '@/localization'
+import { computed, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n({ useScope: 'global' })
 
@@ -71,7 +60,8 @@ const orderedLangs = computed(() => {
   display: flex;
   align-items: center;
   gap: toRem(12);
-  direction: ltr; /* Force LTR to maintain FA [switch] EN order */
+  direction: ltr;
+  /* Force LTR to maintain FA [switch] EN order */
 }
 
 .app-navbar__locale-btn {
