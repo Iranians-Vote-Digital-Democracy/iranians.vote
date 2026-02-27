@@ -82,9 +82,26 @@
 
   /* App variables */
   --app-txt: #{app-colors.$text-primary-main};
-  --app-font-family: 'Inter', 'Arial', sans-serif;
+  --app-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --app-font-family-fa: 'Nian', 'Vazirmatn', system-ui, sans-serif;
   --app-padding-right: #{toRem(156)};
   --app-padding-left: #{toRem(156)};
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 64px rgba(0, 0, 0, 0.12);
+
+  /* Radii */
+  --radius-sm: #{toRem(8)};
+  --radius-md: #{toRem(12)};
+  --radius-lg: #{toRem(16)};
+  --radius-xl: #{toRem(24)};
+  --radius-pill: #{toRem(999)};
+
+  /* Transitions */
+  --transition: 0.18s ease;
+  --transition-slow: 0.3s ease;
 
   @include respond-to(xmedium) {
     --app-padding-right: #{toRem(64)};

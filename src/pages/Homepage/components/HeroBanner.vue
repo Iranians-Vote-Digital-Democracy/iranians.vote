@@ -153,11 +153,11 @@ const appLinks = computed(() => {
 
   /* Direction-aware font family */
   [dir='rtl'] & {
-    font-family: 'Vazir' !important;
+    font-family: 'Nian', 'Vazirmatn', system-ui, sans-serif !important;
   }
 
   [dir='ltr'] & {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   @include respond-to(small) {
@@ -184,7 +184,7 @@ const appLinks = computed(() => {
   align-items: center;
   text-align: center;
   width: 100%;
-  background: rgba(128, 237, 153, 0.1);
+  background: rgba(140, 218, 245, 0.08);
   padding: toRem(64) 0 toRem(80);
 
   @include respond-to(small) {
@@ -217,7 +217,7 @@ const appLinks = computed(() => {
 }
 
 .hero-banner__desc-title {
-  font-family: 'Vazir';
+  font-family: 'Nian', 'Vazirmatn', sans-serif;
   white-space: pre-line;
   margin-bottom: toRem(24);
 
