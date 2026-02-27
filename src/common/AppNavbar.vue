@@ -3,12 +3,23 @@
     <app-logo class="app-navbar__logo" />
     <span class="app-navbar__locale-switcher">
       <template v-for="lang in orderedLangs" :key="lang">
-        <button v-if="lang !== 'switch'" type="button" class="app-navbar__locale-btn"
-          :class="{ 'app-navbar__locale-btn--active': currentLocale === lang }" @click="setLocale(lang as any)">
+        <button
+          v-if="lang !== 'switch'"
+          type="button"
+          class="app-navbar__locale-btn"
+          :class="{ 'app-navbar__locale-btn--active': currentLocale === lang }"
+          @click="setLocale(lang as any)"
+        >
           {{ lang.toUpperCase() }}
         </button>
-        <switch-field v-else class="app-navbar__locale-switch" :label="''" v-model="switchState"
-          @update:model-value="onSwitch" :aria-label="`Toggle language: ${currentLocale}`" />
+        <switch-field
+          v-else
+          class="app-navbar__locale-switch"
+          :label="''"
+          v-model="switchState"
+          @update:model-value="onSwitch"
+          :aria-label="`Toggle language: ${currentLocale}`"
+        />
       </template>
     </span>
   </div>

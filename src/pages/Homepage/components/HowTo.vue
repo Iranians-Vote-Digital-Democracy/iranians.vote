@@ -30,8 +30,14 @@
       </div>
 
       <div class="how-to__video-wrp">
-        <video class="how-to__video" controls :autoplay="false" poster="/images/video-poster.png" width="100%"
-          height="100%">
+        <video
+          class="how-to__video"
+          controls
+          :autoplay="false"
+          poster="/images/video-poster.png"
+          width="100%"
+          height="100%"
+        >
           <source src="/images/how-it-works.mp4" type="video/mp4" />
         </video>
       </div>
