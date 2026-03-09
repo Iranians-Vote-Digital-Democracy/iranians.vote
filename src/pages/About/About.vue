@@ -174,7 +174,7 @@ import {
 }
 
 h2 {
-  font-family: 'Vazir' !important;
+  font-family: var(--current-font-family) !important;
 }
 
 .about__tip {
@@ -283,7 +283,7 @@ h2 {
 }
 
 .about__desc-title {
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
   font-size: toRem(24);
   line-height: 1.25;
   font-weight: 700;
@@ -336,7 +336,7 @@ h2 {
 }
 
 .about__title {
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
 }
 
 .about__icon-divider {

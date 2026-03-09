@@ -45,20 +45,32 @@
         <!--        </template>-->
 
         <div class="hero-banner__desc-links">
-          <router-link v-for="(item, idx) in appLinks" :key="idx" class="hero-banner__desc-links-item" :to="{
-            name: item.routeName,
-            params: {
-              deviceType: item.deviceType,
-            },
-          }">
-            <icon class="hero-banner__desc-links-item-icon" :style="{
-              ...(item?.iconColor && { color: item?.iconColor }),
-            }" :name="item.iconName" />
+          <router-link
+            v-for="(item, idx) in appLinks"
+            :key="idx"
+            class="hero-banner__desc-links-item"
+            :to="{
+              name: item.routeName,
+              params: {
+                deviceType: item.deviceType,
+              },
+            }"
+          >
+            <icon
+              class="hero-banner__desc-links-item-icon"
+              :style="{
+                ...(item?.iconColor && { color: item?.iconColor }),
+              }"
+              :name="item.iconName"
+            />
             <span class="hero-banner__desc-links-item-text">
               {{ item.text }}
             </span>
 
-            <app-button class="hero-banner__desc-links-item-btn" :text="$t('hero-banner.vote-link')" />
+            <app-button
+              class="hero-banner__desc-links-item-btn"
+              :text="$t('hero-banner.vote-link')"
+            />
           </router-link>
         </div>
       </div>
@@ -133,15 +145,6 @@ const appLinks = computed(() => {
   font-weight: 700;
   letter-spacing: -4%;
 
-  /* Direction-aware font family */
-  [dir='rtl'] & {
-    font-family: 'Nian', 'Vazirmatn', system-ui, sans-serif !important;
-  }
-
-  [dir='ltr'] & {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-
   @include respond-to(small) {
     font-size: toRem(32);
     letter-spacing: toRem(0);
@@ -153,15 +156,6 @@ const appLinks = computed(() => {
   font-size: toRem(24);
   line-height: 1.3;
   max-width: toRem(500);
-
-  /* Direction-aware font family */
-  [dir='rtl'] & {
-    font-family: 'Nian', 'Vazirmatn', system-ui, sans-serif !important;
-  }
-
-  [dir='ltr'] & {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  }
 
   @include respond-to(small) {
     font-size: toRem(20);
@@ -208,7 +202,6 @@ const appLinks = computed(() => {
 }
 
 .hero-banner__desc-title {
-  font-family: 'Nian', 'Vazirmatn', sans-serif;
   white-space: pre-line;
   margin-bottom: toRem(24);
 
@@ -285,7 +278,7 @@ const appLinks = computed(() => {
 .hero-banner__desc-wrp .hero-banner__desc-links-item-btn {
   color: var(--text-primary-main);
   font-weight: 700;
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
 
   &:hover {
     color: var(--text-primary-main);

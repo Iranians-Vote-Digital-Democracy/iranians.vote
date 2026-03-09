@@ -120,7 +120,7 @@ const buttonType = computed<ButtonType>(
   --button-icon-size: 1.2em;
 
   outline: 0;
-  font-family: var(--app-font-family);
+  font-family: var(--current-font-family);
   margin: 0;
   cursor: pointer;
   user-select: none;

@@ -74,7 +74,7 @@ const decentralizedIdentificationProcessLinks = [
 }
 
 .repos__title {
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
   font-size: toRem(32);
   font-weight: 700;
   line-height: 1.2;

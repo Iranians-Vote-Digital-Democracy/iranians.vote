@@ -225,7 +225,7 @@ const scrollTo = (element: HTMLElement | undefined) => {
 }
 
 .guide__steps-title {
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
 }
 
 .guide__header {
@@ -429,7 +429,7 @@ const scrollTo = (element: HTMLElement | undefined) => {
 }
 
 .guide__anchor-text {
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
   font-size: toRem(16);
   font-style: normal;
   font-weight: 400;

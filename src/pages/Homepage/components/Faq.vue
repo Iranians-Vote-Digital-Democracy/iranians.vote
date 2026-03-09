@@ -214,7 +214,7 @@ const faqContent = computed(() => {
 }
 
 .faq__show-btn {
-  font-family: 'Vazir';
+  font-family: var(--current-font-family);
   align-self: center;
   color: var(--text-primary-main);
   font-size: toRem(16);

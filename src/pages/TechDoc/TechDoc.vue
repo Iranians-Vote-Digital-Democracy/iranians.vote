@@ -75,7 +75,7 @@ html body .tech-doc .tech-doc__content {
   max-width: toRem(680);
   margin: 0 auto;
   line-height: 1.85;
-  font-family: 'Vazirmatn', sans-serif !important;
+  font-family: var(--current-font-family) !important;
 
   @media screen and (min-width: 32rem) and (max-width: 48rem) {
     .tech-doc__content {
@@ -103,7 +103,7 @@ html body .tech-doc .tech-doc__content {
     padding: 0.5rem;
     line-height: 1.25;
     overflow-x: scroll;
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
   }
 
   @media print {
@@ -156,14 +156,14 @@ html body .tech-doc .tech-doc__content {
     p,
     h2,
     h3 {
-      font-family: 'Vazirmatn', sans-serif;
+      font-family: var(--current-font-family);
       orphans: 3;
       widows: 3;
     }
 
     h2,
     h3 {
-      font-family: 'Vazirmatn', sans-serif;
+      font-family: var(--current-font-family);
       page-break-after: avoid;
     }
   }
@@ -185,7 +185,7 @@ html body .tech-doc .tech-doc__content {
 
   p,
   .retro-p {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     line-height: 1.6;
     font-size: toRem(20);
     margin-top: toRem(42);
@@ -217,7 +217,7 @@ html body .tech-doc .tech-doc__content {
 
   h2,
   .retro-h2 {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     font-size: toRem(48);
 
     @include respond-to(small) {
@@ -227,7 +227,7 @@ html body .tech-doc .tech-doc__content {
 
   h3,
   .retro-h3 {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     font-size: toRem(36);
 
     @include respond-to(small) {
@@ -237,7 +237,7 @@ html body .tech-doc .tech-doc__content {
 
   h4,
   .retro-h4 {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     font-size: toRem(28);
 
     @include respond-to(small) {
@@ -247,7 +247,7 @@ html body .tech-doc .tech-doc__content {
 
   h5,
   .retro-h5 {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     font-size: toRem(24);
 
     @include respond-to(small) {
@@ -257,13 +257,13 @@ html body .tech-doc .tech-doc__content {
 
   h6,
   .retro-h6 {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     font-size: toRem(20);
   }
 
   small,
   .retro-small {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     font-size: 0.707em;
   }
 
@@ -280,7 +280,7 @@ html body .tech-doc .tech-doc__content {
   }
 
   a {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     line-height: 1.6;
     font-size: toRem(18);
     margin-top: toRem(42);
@@ -299,7 +299,7 @@ html body .tech-doc .tech-doc__content {
 
   ol,
   ol li {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     line-height: 1.6;
     font-size: toRem(20);
     letter-spacing: 0.005em;
@@ -309,7 +309,7 @@ html body .tech-doc .tech-doc__content {
 
   ul,
   ul li {
-    font-family: 'Vazirmatn', sans-serif;
+    font-family: var(--current-font-family);
     line-height: 1.6;
     font-size: toRem(20);
     letter-spacing: 0.005em;
