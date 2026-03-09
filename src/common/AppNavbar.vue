@@ -2,35 +2,19 @@
   <div class="app-navbar">
     <app-logo class="app-navbar__logo" />
 
-    <a
-      class="app-navbar__github-link"
-      href="https://github.com/Iranians-Vote-Digital-Democracy/mobile-Iranians.vote"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="GitHub Repository"
-    >
+    <a class="app-navbar__github-link" href="https://github.com/Iranians-Vote-Digital-Democracy/mobile-Iranians.vote"
+      target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
       <icon class="app-navbar__github-icon" :name="$icons.github" />
     </a>
 
     <span class="app-navbar__locale-switcher">
       <template v-for="lang in orderedLangs" :key="lang">
-        <button
-          v-if="lang !== 'switch'"
-          type="button"
-          class="app-navbar__locale-btn"
-          :class="{ 'app-navbar__locale-btn--active': currentLocale === lang }"
-          @click="setLocale(lang as any)"
-        >
+        <button v-if="lang !== 'switch'" type="button" class="app-navbar__locale-btn"
+          :class="{ 'app-navbar__locale-btn--active': currentLocale === lang }" @click="setLocale(lang as any)">
           {{ lang.toUpperCase() }}
         </button>
-        <switch-field
-          v-else
-          class="app-navbar__locale-switch"
-          :label="''"
-          v-model="switchState"
-          @update:model-value="onSwitch"
-          :aria-label="`Toggle language: ${currentLocale}`"
-        />
+        <switch-field v-else class="app-navbar__locale-switch" :label="''" v-model="switchState"
+          @update:model-value="onSwitch" :aria-label="`Toggle language: ${currentLocale}`" />
       </template>
     </span>
   </div>
