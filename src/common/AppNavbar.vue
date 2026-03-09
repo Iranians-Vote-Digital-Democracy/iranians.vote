@@ -1,6 +1,17 @@
 <template>
   <div class="app-navbar">
     <app-logo class="app-navbar__logo" />
+
+    <a
+      class="app-navbar__github-link"
+      href="https://github.com/Iranians-Vote-Digital-Democracy/mobile-Iranians.vote"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub Repository"
+    >
+      <icon class="app-navbar__github-icon" :name="$icons.github" />
+    </a>
+
     <span class="app-navbar__locale-switcher">
       <template v-for="lang in orderedLangs" :key="lang">
         <button
@@ -26,7 +37,7 @@
 </template>
 
 <script lang="ts" setup>
-import { AppLogo } from '@/common'
+import { AppLogo, Icon } from '@/common'
 import { SwitchField } from '@/fields'
 import { setLocale } from '@/localization'
 import { computed, ref, watch } from 'vue'
@@ -65,6 +76,24 @@ const orderedLangs = computed(() => {
 
 .app-navbar__logo {
   margin-right: auto;
+}
+
+.app-navbar__github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary-main);
+  transition: color 0.15s;
+
+  &:hover {
+    color: var(--text-primary-main);
+  }
+}
+
+.app-navbar__github-icon {
+  width: toRem(24);
+  height: toRem(24);
+  color: inherit;
 }
 
 .app-navbar__locale-switcher {

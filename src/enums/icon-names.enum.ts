@@ -110,6 +110,7 @@ export enum ICON_NAMES {
   folderRemove = 'folder-remove',
   folder = 'folder',
   gift = 'gift',
+  github = 'github',
   globeAlt = 'globe-alt',
   globe = 'globe',
   hand = 'hand',

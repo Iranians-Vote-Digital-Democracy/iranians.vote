@@ -121,6 +121,7 @@ const appLinks = computed(() => {
 .hero-banner__titles {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   text-align: center;
   overflow: hidden;
@@ -129,13 +130,6 @@ const appLinks = computed(() => {
   background-size: cover;
   padding-top: toRem(300);
   padding-bottom: toRem(160);
-
-  /* Adjust background for LTR languages */
-  [dir='ltr'] & {
-    background-size: contain;
-    padding-top: toRem(100);
-    padding-bottom: toRem(80);
-  }
 
   @include respond-to(small) {
     padding-top: toRem(32);
@@ -171,6 +165,15 @@ const appLinks = computed(() => {
   font-size: toRem(24);
   line-height: 1.3;
   max-width: toRem(500);
+
+  /* Direction-aware font family */
+  [dir='rtl'] & {
+    font-family: 'Nian', 'Vazirmatn', system-ui, sans-serif !important;
+  }
+
+  [dir='ltr'] & {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
 
   @include respond-to(small) {
     font-size: toRem(20);
