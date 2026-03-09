@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Skeleton } from '@/common'
+import Skeleton from '@/common/loaders/Skeleton.vue'
 
 withDefaults(
   defineProps<{

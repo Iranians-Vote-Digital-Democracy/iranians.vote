@@ -30,7 +30,8 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 
-import { AppButton, Modal } from '@/common'
+import AppButton from '@/common/AppButton.vue'
+import Modal from '@/common/Modal.vue'
 import { ICON_NAMES } from '@/enums'
 
 const props = withDefaults(

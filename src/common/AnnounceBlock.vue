@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@/common'
+import Icon from '@/common/Icon.vue'
 import { ICON_NAMES } from '@/enums'
 
 withDefaults(

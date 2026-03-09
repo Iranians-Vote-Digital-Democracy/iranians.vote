@@ -37,7 +37,8 @@
 </template>
 
 <script lang="ts" setup>
-import { AppLogo, Icon } from '@/common'
+import AppLogo from '@/common/AppLogo.vue'
+import Icon from '@/common/Icon.vue'
 import { SwitchField } from '@/fields'
 import { setLocale } from '@/localization'
 import { computed, ref, watch } from 'vue'

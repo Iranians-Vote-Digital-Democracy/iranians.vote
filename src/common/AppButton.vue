@@ -58,7 +58,7 @@
 import { computed, useAttrs, useSlots } from 'vue'
 import type { LocationAsRelativeRaw } from 'vue-router'
 
-import { Icon } from '@/common'
+import Icon from '@/common/Icon.vue'
 import type { ICON_NAMES } from '@/enums'
 
 type ButtonType = 'button' | 'submit' | 'reset'

@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from '@/common'
+import Icon from '@/common/Icon.vue'
 import type { LocationAsRelativeRaw } from 'vue-router'
 
 withDefaults(
